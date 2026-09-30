@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claudimery Silva — Suprimentos e Compras</title>
+<meta name="description" content="Claudimery Silva, compradora com mais de 9 anos em suprimentos e compras. Paulista, PE.">
+<meta property="og:title" content="Claudimery Silva — Suprimentos e Compras">
+<meta property="og:image" content="foto.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<!-- Modelo 4 — Painel de Indicadores -->
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:#F3F5F8;color:#0F172A}
+a{color:#2458D6}a:hover{color:#1A3FA0}
+img{max-width:100%}
+
+html{scroll-behavior:smooth}
+.page{overflow-x:hidden}
+.voltar{position:fixed;left:16px;bottom:16px;z-index:50;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;background:#15183A;color:#fff !important;font:600 14px/1 system-ui,-apple-system,sans-serif;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.voltar:hover{background:#2A2F63}
+@media (max-width:1200px){
+  .page > section,.page > header,.page > main{padding-left:48px !important;padding-right:48px !important}
+}
+@media (max-width:860px){
+  .page > section,.page > header,.page > main{padding-left:20px !important;padding-right:20px !important}
+  .page [style*="grid-template-columns"]:not(.keep):not(.two){grid-template-columns:minmax(0,1fr) !important}
+  .page[style*="grid-template-columns"]{grid-template-columns:minmax(0,1fr) !important}
+  .page .two{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .page [style*="grid-column: span 2"]{grid-column:auto !important}
+  .page [style*="display: flex"]:not([style*="flex-direction: column"]){flex-wrap:wrap}
+  .page [style*="gap: 80px"],.page [style*="gap: 72px"],.page [style*="gap: 64px"]{gap:36px !important}
+  .page h1{font-size:clamp(46px,13vw,64px) !important;line-height:1 !important}
+  .page h2{font-size:clamp(30px,8.5vw,40px) !important;line-height:1.1 !important}
+  .page header nav a:not(:last-child){display:none}
+  .page header{height:auto !important;min-height:68px;padding-top:12px !important;padding-bottom:12px !important}
+  .page .hide-m{display:none !important}
+  .page .scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .voltar{left:12px;bottom:12px;padding:0 14px;font-size:13px}
+}
+
+
+@media (max-width:860px){
+  .page .m4-nav{display:none !important}
+  .page main h2{font-size:19px !important;line-height:1.3 !important}
+  .page .scroll-x > .keep[style*="240px 760px"]{grid-template-columns:150px 760px !important}
+  .page aside{padding:28px 20px !important;gap:22px !important}
+  .page .scroll-x > div{min-width:910px}
+  .page .m4-matrix > div{min-width:860px}
+  .page span[style*="font-size: 44px"]{font-size:34px !important}
+}
+
+</style>
+</head>
+<body>
+<div class="page" style="width: 100%; min-height: 100vh; box-sizing: border-box; display: grid; grid-template-columns: 300px minmax(0, 1fr); background: #F3F5F8; color: #0F172A; font-family: 'DM Sans', system-ui, sans-serif">
+
+<aside style="background: #0F172A; color: #E2E8F0; padding: 40px 28px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
+<img src="foto.jpg" alt="Foto de Claudimery Silva" style="width: 96px; height: 96px; border-radius: 20px; object-fit: cover">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 22px; font-weight: 700; color: #FFFFFF">Claudimery Silva</span><span style="font-size: 14px; color: #94A3B8">Compradora · Suprimentos</span></div>
+<span style="display: flex; align-items: center; gap: 8px; background: #16233F; border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 600; color: #FDBA74"><span style="width: 8px; height: 8px; border-radius: 999px; background: #F59E0B"></span>MANISA Engenharia Industrial</span>
+</div>
+<nav class="m4-nav" style="display: flex; flex-direction: column; gap: 4px; font-size: 15px; font-weight: 500">
+<a href="#visao" style="text-decoration: none; color: #FFFFFF; background: #1E293B; border-radius: 10px; padding: 12px 14px">Visão geral</a>
+<a href="#linha" style="text-decoration: none; color: #CBD5E1; border-radius: 10px; padding: 12px 14px">Linha do tempo</a>
+<a href="#matriz" style="text-decoration: none; color: #CBD5E1; border-radius: 10px; padding: 12px 14px">Competências</a>
+<a href="#cargos" style="text-decoration: none; color: #CBD5E1; border-radius: 10px; padding: 12px 14px">Cargos em suprimentos</a>
+<a href="#dados" style="text-decoration: none; color: #CBD5E1; border-radius: 10px; padding: 12px 14px">Formação e sistemas</a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #1E293B; padding-top: 24px">
+<span style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #94A3B8">Contato</span>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px"><span style="color: #94A3B8">LinkedIn</span><a href="https://www.linkedin.com/in/claudimery-silva-622737133/" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: none; word-break: break-all">in/claudimery-silva-622737133</a></div>
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px"><span style="color: #94A3B8">Localização</span><span style="color: #FFFFFF">Paulista · PE</span></div>
+<a href="curriculo.pdf" download style="text-decoration: none; background: #2458D6; color: #FFFFFF; border-radius: 10px; padding: 14px 16px; font-size: 15px; font-weight: 600; text-align: center; margin-top: 6px">Baixar currículo</a>
+</div>
+</aside>
+
+<main style="padding: 40px 48px 48px; display: flex; flex-direction: column; gap: 24px">
+
+<div id="visao" style="display: flex; justify-content: space-between; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'DM Mono', monospace; font-size: 13px; color: #64748B">Perfil profissional / Suprimentos e compras</span><h1 style="margin: 0; font-size: 36px; font-weight: 700; letter-spacing: -0.02em">Visão geral</h1></div>
+<a href="https://www.linkedin.com/in/claudimery-silva-622737133/" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #CBD5E1; background: #FFFFFF; color: #0F172A; border-radius: 10px; padding: 12px 18px; font-size: 15px; font-weight: 600">Conectar no LinkedIn ↗</a>
+</div>
+
+<div class="two" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #475569">Anos em suprimentos</span><span style="font-size: 44px; font-weight: 700; letter-spacing: -0.03em; line-height: 1">9+</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2458D6">desde mar 2017</span></div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #475569">Anos de carreira</span><span style="font-size: 44px; font-weight: 700; letter-spacing: -0.03em; line-height: 1">20</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2458D6">desde ago 2006</span></div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #475569">Empresas</span><span style="font-size: 44px; font-weight: 700; letter-spacing: -0.03em; line-height: 1">9</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2458D6">4 em suprimentos</span></div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #475569">Sistemas ERP</span><span style="font-size: 44px; font-weight: 700; letter-spacing: -0.03em; line-height: 1">4</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2458D6">TOTVS · Sankhya · Omie · WA</span></div>
+</div>
+
+<section id="linha" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<h2 style="margin: 0; font-size: 20px; font-weight: 700">Linha do tempo · 2006 — 2026</h2>
+<div style="display: flex; gap: 20px; font-size: 13px; color: #475569">
+<span style="display: flex; align-items: center; gap: 8px"><span style="width: 14px; height: 10px; border-radius: 3px; background: #F59E0B"></span>Atual</span>
+<span style="display: flex; align-items: center; gap: 8px"><span style="width: 14px; height: 10px; border-radius: 3px; background: #2458D6"></span>Suprimentos</span>
+<span style="display: flex; align-items: center; gap: 8px"><span style="width: 14px; height: 10px; border-radius: 3px; background: #A5B4CC"></span>Comercial e atendimento</span>
+<span style="display: flex; align-items: center; gap: 8px"><span style="width: 14px; height: 10px; border-radius: 3px; border: 1.5px solid #0F766E"></span>Formação</span>
+</div>
+</div>
+<div class="scroll-x" style="display: flex; flex-direction: column">
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">CSU CardSystem</span><span style="font-size: 12px; color: #64748B">Atendente</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 21px; width: 81px; top: 14px; height: 16px; border-radius: 4px; background: #A5B4CC"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Capital Login – Kurier</span><span style="font-size: 12px; color: #64748B">Assistente comercial (estágio)</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 109px; width: 21px; top: 14px; height: 16px; border-radius: 4px; background: #A5B4CC"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">OPS Planos de Saúde</span><span style="font-size: 12px; color: #64748B">Assistente comercial</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 142px; width: 51px; top: 14px; height: 16px; border-radius: 4px; background: #A5B4CC"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Acoplation Andaimes</span><span style="font-size: 12px; color: #64748B">Auxiliar comercial</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 223px; width: 42px; top: 14px; height: 16px; border-radius: 4px; background: #A5B4CC"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Estaf Equipamentos</span><span style="font-size: 12px; color: #64748B">Auxiliar comercial</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 317px; width: 39px; top: 14px; height: 16px; border-radius: 4px; background: #A5B4CC"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">INDUSLAB</span><span style="font-size: 12px; color: #64748B">Analista de suprimentos</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 404px; width: 199px; top: 14px; height: 16px; border-radius: 4px; background: #2458D6"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Volga</span><span style="font-size: 12px; color: #64748B">Assistente de suprimentos</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 603px; width: 18px; top: 14px; height: 16px; border-radius: 4px; background: #2458D6"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Baikal</span><span style="font-size: 12px; color: #64748B">Assistente de suprimentos</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 621px; width: 33px; top: 14px; height: 16px; border-radius: 4px; background: #2458D6"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #E2E8F0"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">MANISA Eng. Industrial</span><span style="font-size: 12px; color: #64748B">Compradora</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 658px; width: 94px; top: 14px; height: 16px; border-radius: 4px; background: #F59E0B"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #F1F5F9"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">UNICAP</span><span style="font-size: 12px; color: #64748B">Bacharelado em Administração</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 0; width: 217px; top: 14px; height: 16px; box-sizing: border-box; border-radius: 4px; border: 1.5px solid #0F766E; background: #F0FDFA"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 44px; align-items: center; border-bottom: 1px solid #E2E8F0"><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Estácio do Recife</span><span style="font-size: 12px; color: #64748B">MBA em Gestão Empresarial</span></div><div style="position: relative; height: 44px"><div style="position: absolute; left: 290px; width: 109px; top: 14px; height: 16px; box-sizing: border-box; border-radius: 4px; border: 1.5px solid #0F766E; background: #F0FDFA"></div></div></div>
+<div class="keep" style="display: grid; grid-template-columns: 240px 760px; height: 28px; align-items: end"><span></span><div style="position: relative; height: 28px; font-family: 'DM Mono', monospace; font-size: 12px; color: #64748B">
+<span style="position: absolute; left: 0; bottom: 0">2006</span>
+<span style="position: absolute; left: 131px; bottom: 0">2010</span>
+<span style="position: absolute; left: 276px; bottom: 0">2014</span>
+<span style="position: absolute; left: 420px; bottom: 0">2018</span>
+<span style="position: absolute; left: 565px; bottom: 0">2022</span>
+<span style="position: absolute; left: 710px; bottom: 0">2026</span>
+</div></div>
+</div>
+</section>
+
+<section id="matriz" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 32px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><h2 style="margin: 0; font-size: 20px; font-weight: 700">Competências por empresa</h2><span style="font-size: 13px; color: #64748B">Conforme atribuições descritas no currículo</span></div>
+<div class="scroll-x m4-matrix" style="display: flex; flex-direction: column">
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 52px; align-items: end; padding-bottom: 10px; border-bottom: 1px solid #E2E8F0; font-size: 12px; font-weight: 600; color: #475569; text-align: center"><span style="text-align: left">Competência</span><span>Baikal</span><span>Volga</span><span>INDUSLAB</span><span>Estaf</span><span>Acoplation</span><span>OPS</span><span>Capital Login</span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; border-bottom: 1px solid #F1F5F9; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Negociação de compras</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; border-bottom: 1px solid #F1F5F9; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Prospecção / pesquisa de fornecedores</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; border-bottom: 1px solid #F1F5F9; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Pedidos de compra e follow-up</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; border-bottom: 1px solid #F1F5F9; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Estoque, expedição e inventário</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; border-bottom: 1px solid #F1F5F9; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Notas fiscais, CT-e e faturamento</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; border-bottom: 1px solid #F1F5F9; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Compras de mobilização</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; border-bottom: 1px solid #F1F5F9; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Propostas comerciais</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span></div>
+<div class="keep" style="display: grid; grid-template-columns: 290px repeat(7, minmax(0, 1fr)); height: 48px; align-items: center; justify-items: center"><span style="justify-self: start; font-size: 14px; font-weight: 500">Contratos e aditivos</span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 6px; height: 6px; border-radius: 999px; background: #CBD5E1"></span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span><span style="width: 22px; height: 22px; border-radius: 999px; background: #2458D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 13px">✓</span></div>
+</div>
+</section>
+
+<section id="cargos" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #F59E0B; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B45309">MAR 2024 — ATUAL</span><span style="background: #FEF3C7; color: #92400E; border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 600">Atual</span></div>
+<span style="font-size: 20px; font-weight: 700">Compradora</span>
+<span style="font-size: 15px; color: #475569">MANISA Engenharia Industrial · Recife, PE</span>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2458D6">MAR 2023 — JAN 2024 · 11 MESES</span>
+<span style="font-size: 20px; font-weight: 700">Assistente de Suprimentos · Baikal</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #475569">Compras de insumos e serviços para obras civis e industriais, pedidos, prospecção, protocolo de NF, follow-up e mobilização.</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2458D6">SET 2022 — FEV 2023 · 6 MESES</span>
+<span style="font-size: 20px; font-weight: 700">Assistente de Suprimentos · Volga</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #475569">Negociação de compras para obras, emissão e follow-up de pedidos, protocolo de NF e compras de mobilização.</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2458D6">MAR 2017 — AGO 2022 · 5 ANOS E 6 MESES</span>
+<span style="font-size: 20px; font-weight: 700">Analista de Suprimentos · INDUSLAB</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #475569">Ordens de compra, negociação e redução de custos; estoque, inventário e shelf life; NF de entrada, CT-e, faturamento e relatórios gerenciais.</p>
+</div>
+</section>
+
+<section id="dados" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 17px; font-weight: 700">Sistemas e ferramentas</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="background: #EEF2FF; color: #1E3A8A; border-radius: 8px; padding: 7px 12px; font-family: 'DM Mono', monospace; font-size: 13px">TOTVS</span>
+<span style="background: #EEF2FF; color: #1E3A8A; border-radius: 8px; padding: 7px 12px; font-family: 'DM Mono', monospace; font-size: 13px">Sankhya</span>
+<span style="background: #EEF2FF; color: #1E3A8A; border-radius: 8px; padding: 7px 12px; font-family: 'DM Mono', monospace; font-size: 13px">Omie</span>
+<span style="background: #EEF2FF; color: #1E3A8A; border-radius: 8px; padding: 7px 12px; font-family: 'DM Mono', monospace; font-size: 13px">WA</span>
+<span style="background: #F1F5F9; color: #334155; border-radius: 8px; padding: 7px 12px; font-family: 'DM Mono', monospace; font-size: 13px">CRM</span>
+<span style="background: #F1F5F9; color: #334155; border-radius: 8px; padding: 7px 12px; font-family: 'DM Mono', monospace; font-size: 13px">UpQuery</span>
+</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 17px; font-weight: 700">Formação</h2>
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">MBA em Gestão Empresarial</span><span style="font-size: 13px; color: #64748B">Estácio do Recife · 2014–2016</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Bacharelado em Administração</span><span style="font-size: 13px; color: #64748B">UNICAP · 2006–2011</span></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px 28px; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 17px; font-weight: 700">Idiomas</h2>
+<div style="display: flex; justify-content: space-between; font-size: 15px"><span style="font-weight: 600">Português</span><span style="color: #64748B">Nativo</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 15px"><span style="font-weight: 600">Inglês</span><span style="color: #64748B">Básico</span></div>
+</div>
+</section>
+
+<footer style="margin-top: auto; display: flex; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 20px; font-size: 13px; color: #64748B"><span>© 2026 Claudimery Silva</span><span>Paulista · Pernambuco</span></footer>
+</main>
+
+</div>
+<!-- Link de navegação entre modelos: remova quando o modelo final for escolhido -->
+<a class="voltar" href="index.html">← Todos os modelos</a>
+</body>
+</html>
